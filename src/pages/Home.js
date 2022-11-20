@@ -11,9 +11,9 @@ function Home(){
     return (
         <>
          <Wrapper>
-            <Header>예비집사 판별기</Header>
+            <Header>나라로 알아보는 MBTI</Header>
             <Contents>
-                <Title>나에게 맞는 주인님은?</Title>
+                <Title>나에게 맞는 국가는?</Title>
                 <LogoImage>
                     <img src={img} alt="" width={350} height={350} className='rounded-circle' />
                 </LogoImage>
