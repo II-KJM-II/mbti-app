@@ -4,7 +4,7 @@ const {Kakao}=window
 const KakaoShareButton=({data})=>{
   let url='mbtiapp1.netlify.app'
   let resultUrl=window.location.href
-  console.log(data.image)
+  console.log(url+data.image)
   React.useEffect(()=>{
     Kakao.cleanup()
     Kakao.init('a5fad39d7fc5d2f1636f6819bc3f353a')
