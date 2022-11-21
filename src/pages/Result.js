@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from 'react-bootstrap/Button'
+
 import {useNavigate, useSearchParams} from 'react-router-dom'
 import { ResultData } from '../data/resultdata'
+// import { ButtonGroup } from 'react-bootstrap'
 function Result(){
     const navigate=useNavigate()
     const [searchParams]=useSearchParams()
@@ -23,7 +25,9 @@ function Result(){
                    <img src={result.image} alt="" width={350} height={350} className='rounded-circle' />
                </LogoImage>
                <Desc>{result.desc}</Desc>
-               <Button onClick={()=>navigate('/')}>테스트 다시하기</Button>
+               <ButtonGroup>
+                    <Button onClick={()=>navigate('/')}>테스트 다시하기</Button>
+               </ButtonGroup>
            </Contents>
         </Wrapper>
        </>
@@ -58,5 +62,9 @@ const Contents=styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-direction:column
+    flex-direction:column;
+`
+const ButtonGroup=styled.div`
+    display:flex;
+    flex-direction:row;
 `
