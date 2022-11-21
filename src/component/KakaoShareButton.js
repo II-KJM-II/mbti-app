@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
 const {Kakao}=window
-const KakaoShareButton=({data})=>{
+const KakaoShareButton=({ResultData})=>{
   let url='mbtiapp1.netlify.app'
   let resultUrl=window.location.href
 
@@ -16,7 +16,7 @@ const KakaoShareButton=({data})=>{
         objectType: 'feed',
         content: {
           title: '재미로 알아보는 국가별 MBTI',
-          description: `나와 맞는 국가는 ${data.name} 입니다`,
+          description: `나와 맞는 국가는 ${ResultData.name} 입니다`,
           imageUrl:'',
           link: {
             mobileWebUrl: resultUrl,
