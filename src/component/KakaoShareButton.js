@@ -38,7 +38,7 @@ const KakaoShareButton=()=>{
     }
   
     return (
-       <Button onClick={shareKakao}>카카오톡 공유하기</Button>
+       <div id='kakaotalk-sharing-btn'><Button onClick={shareKakao}>카카오톡 공유하기</Button></div>
 
     )
 }
