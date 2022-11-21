@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from 'react-bootstrap/Button'
-import { ResultData } from '../data/resultdata'
+import { ResultData } from '../assets/data/resultdata'
 import KakaoShareButton from '../component/KakaoShareButton'
 import {useNavigate, useSearchParams} from 'react-router-dom'
 // import { ButtonGroup } from 'react-bootstrap'
