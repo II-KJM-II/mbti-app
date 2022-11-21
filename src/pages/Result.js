@@ -26,7 +26,7 @@ function Result(){
                <Desc>{result.desc}</Desc>
                <ButtonGroup>
                     <Button onClick={()=>navigate('/')}>테스트 다시하기</Button>
-                    <KakaoShareButton ResultData={result}/>
+                    <KakaoShareButton data={result}/>
                </ButtonGroup>
            </Contents>
         </Wrapper>
