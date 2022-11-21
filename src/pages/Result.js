@@ -14,7 +14,6 @@ function Result(){
         const final=ResultData.find((s)=>s.best===mbti) //resultData의 각 요소를 순회하면서 Question.js에서 받아온 mbti에 해당하는값 찾아서(find) final변수에 저장
         setResult(final)
     },[mbti])
-    console.log(mbti)
     return (
         <>
         <Wrapper>
@@ -27,7 +26,7 @@ function Result(){
                <Desc>{result.desc}</Desc>
                <ButtonGroup>
                     <Button onClick={()=>navigate('/')}>테스트 다시하기</Button>
-                    <KakaoShareButton/>
+                    <KakaoShareButton data={ResultData}/>
                </ButtonGroup>
            </Contents>
         </Wrapper>

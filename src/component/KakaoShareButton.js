@@ -1,9 +1,9 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
 const {Kakao}=window
-const KakaoShareButton=()=>{
-  const url='mbtiapp1.netlify.app'
-  //const resultUrl=window.location.href
+const KakaoShareButton=({data})=>{
+  let url='mbtiapp1.netlify.app'
+  let resultUrl=window.location.href
 
   React.useEffect(()=>{
     Kakao.cleanup()
@@ -16,12 +16,12 @@ const KakaoShareButton=()=>{
         objectType: 'feed',
         content: {
           title: '재미로 알아보는 국가별 MBTI',
-          description: '나와 맞는 국가는 일본 입니다',
+          description: `나와 맞는 국가는 ${data.name} 입니다`,
           imageUrl:
-            'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+            url=data.image,
           link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
+            mobileWebUrl: resultUrl,
+            webUrl: resultUrl,
           },
         },
         buttons: [
@@ -29,7 +29,7 @@ const KakaoShareButton=()=>{
             title: '나도 테스트 하러가기',
             link: {
               mobileWebUrl: url,
-              webUrl: 'https://developers.kakao.com',
+              webUrl:url,
             },
           },
           
