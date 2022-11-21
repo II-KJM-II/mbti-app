@@ -8,7 +8,6 @@ const KakaoShareButton=()=>{
   React.useEffect(()=>{
     Kakao.cleanup()
     Kakao.init('a5fad39d7fc5d2f1636f6819bc3f353a')
-    console.log(Kakao.isInitialized())
   },[])
     const shareKakao=()=>{
       Kakao.Share.createDefaultButton({
