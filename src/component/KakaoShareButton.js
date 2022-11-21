@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button'
 const {Kakao}=window
 const KakaoShareButton=()=>{
   const url='mbtiapp1.netlify.app'
-  const resultUrl=window.location.href
+  //const resultUrl=window.location.href
 
   React.useEffect(()=>{
     Kakao.cleanup()
