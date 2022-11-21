@@ -4,7 +4,6 @@ import Button from 'react-bootstrap/Button'
 import { ResultData } from '../data/resultdata'
 import KakaoShareButton from '../component/KakaoShareButton'
 import {useNavigate, useSearchParams} from 'react-router-dom'
-// import { ButtonGroup } from 'react-bootstrap'
 function Result(){
     const navigate=useNavigate()
     const [searchParams]=useSearchParams()
@@ -41,13 +40,17 @@ const Wrapper=styled.div`
     width:100%;
 `
 const Header=styled.div`
-    font-size:40pt;
+    font-size:2.2rem;
     display:flex;
     justify-content:center;
     align-items:center;
+    
+    // @media (max-width:600px){
+    //     font-size:1.8rem;
+    // }
 `
 const Title=styled.div`
-    font-size:30pt;
+    font-size:1.8rem;
     margin-top:40px;
 `
 const LogoImage=styled.div`
@@ -55,7 +58,7 @@ const LogoImage=styled.div`
 `
 
 const Desc=styled.div`
-    font-size:20pt;
+    font-size:1.2rem;
     margin-top:20px;
 `
 const Contents=styled.div`

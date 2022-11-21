@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import img from '../img/지구.jpg'
 import Button from 'react-bootstrap/Button'
 import {useNavigate} from 'react-router-dom'
+
 function Home(){
     const navigate=useNavigate()
     const handleClickButton=()=>{ //버튼 클릭시 question화면으로 넘어감
@@ -18,7 +19,7 @@ function Home(){
                     <img src={img} alt="" width={350} height={350} className='rounded-circle' />
                 </LogoImage>
                 <Desc>MBTI를 기반으로 하는 나와 잘맞는 국가 찾기</Desc>
-                <Button onClick={handleClickButton}>테스트 시작</Button>
+                <Button onClick={handleClickButton} style={{marginTop:'20px'}}>테스트 시작</Button>
             </Contents>
          </Wrapper>
         </>
@@ -32,13 +33,13 @@ const Wrapper=styled.div`
     width:100%;
 `
 const Header=styled.div`
-    font-size:40pt;
+    font-size:2.2rem;
     display:flex;
     justify-content:center;
     align-items:center;
 `
 const Title=styled.div`
-    font-size:30pt;
+    font-size:1.8rem;
     margin-top:40px;
 `
 const LogoImage=styled.div`
@@ -46,7 +47,7 @@ const LogoImage=styled.div`
 `
 
 const Desc=styled.div`
-    font-size:20pt;
+    font-size:1.2rem;
     margin-top:20px;
 `
 const Contents=styled.div`

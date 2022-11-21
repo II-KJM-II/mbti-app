@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import styles from '../mobile/Question.module.css'
 import {ProgressBar,Button} from 'react-bootstrap'
 import {createSearchParams, useNavigate} from 'react-router-dom'
 import {QuestionData} from '../data/questiondata'
@@ -43,8 +44,8 @@ function Question(){
             <ProgressBar variant="info" now={questionNo/QuestionData.length*100} style={{marginTop:'20px'}}/>
             <Title>{QuestionData[questionNo].title}</Title>
             <ButtonGroup>
-                <Button onClick={()=>handleClickButton(1,QuestionData[questionNo].type)} style={{width:'40%',minHeigth:'200px',fontSize:'15pt'}}>{QuestionData[questionNo].answera}</Button>
-                <Button onClick={()=>handleClickButton(0,QuestionData[questionNo].type)} style={{width:'40%',minHeigth:'200px',fontSize:'15pt',marginLeft:'20px'}}>{QuestionData[questionNo].answerb}</Button>
+                <Button className={styles.btn} onClick={()=>handleClickButton(1,QuestionData[questionNo].type)} >{QuestionData[questionNo].answera}</Button>
+                <Button className={styles.btn} onClick={()=>handleClickButton(0,QuestionData[questionNo].type)} style={{marginLeft:'20px'}}>{QuestionData[questionNo].answerb}</Button>
             </ButtonGroup>
         </Wrapper>
     )
@@ -57,7 +58,7 @@ const Wrapper=styled.div`
     width:100%;
 `
 const Title=styled.div`
-    font-size:30pt;
+    font-size:1.8rem;
     text-align:center;
 `
 const ButtonGroup=styled.div`
@@ -65,4 +66,5 @@ const ButtonGroup=styled.div`
     flex-direction:row;
     align-items:center;
     justify-content:center;
+    margin-top:10px;
 `
