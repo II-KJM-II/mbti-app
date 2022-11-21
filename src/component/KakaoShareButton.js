@@ -17,7 +17,7 @@ const KakaoShareButton=({data})=>{
         content: {
           title: '재미로 알아보는 국가별 MBTI',
           description: `나와 맞는 국가는 ${data.name} 입니다`,
-          imageUrl:url=data.image,
+          imageUrl:url+data.image,
           link: {
             mobileWebUrl: resultUrl,
             webUrl: resultUrl,
