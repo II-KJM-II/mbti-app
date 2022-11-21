@@ -9,14 +9,14 @@ function Result(){
     const mbti=searchParams.get('mbti')
     const [result,setResult]=useState({}) //받아온(import) ResultData와 다름
     React.useEffect(()=>{
-        const final=ResultData.find((s)=>s.best===mbti)
+        const final=ResultData.find((s)=>s.best===mbti) //resultData의 각 요소를 순회하면서 Question.js에서 받아온 mbti에 해당하는값 찾아서(find) final변수에 저장
         setResult(final)
     },[mbti])
     console.log(mbti)
     return (
         <>
         <Wrapper>
-           <Header>나라로 알아보는 MBTI</Header>
+           <Header>당신의 MBTI는 {mbti} 입니다.</Header>
            <Contents>
                <Title>당신과 잘 맞는 국가는 {result.name} 입니다.</Title>
                <LogoImage>

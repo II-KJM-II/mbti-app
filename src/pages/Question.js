@@ -18,7 +18,7 @@ function Question(){
             s.id===type? { id: s.id, score: s.score+no } : s
         ))
         setTotalScore(newScore)
-        if(QuestionData.length!==questionNo+1){
+        if(QuestionData.length!==questionNo+1){ //질문 선택 아직 안끝났을 때
             setQuestionNo(questionNo+1)
         }
         else{ //모든 문제 선택 끝났을때 결과 창으로 넘어가기 위함

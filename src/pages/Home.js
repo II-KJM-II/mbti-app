@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import img from '../img/커닝시티.PNG'
+import img from '../img/지구.jpg'
 import Button from 'react-bootstrap/Button'
 import {useNavigate} from 'react-router-dom'
 function Home(){
@@ -11,13 +11,13 @@ function Home(){
     return (
         <>
          <Wrapper>
-            <Header>나라로 알아보는 MBTI</Header>
+            <Header>재미로 알아보는 국가별 MBTI</Header>
             <Contents>
                 <Title>나에게 맞는 국가는?</Title>
                 <LogoImage>
                     <img src={img} alt="" width={350} height={350} className='rounded-circle' />
                 </LogoImage>
-                <Desc>MBTI를 기반으로 하는 나와 잘맞는 고양이 찾기</Desc>
+                <Desc>MBTI를 기반으로 하는 나와 잘맞는 국가 찾기</Desc>
                 <Button onClick={handleClickButton}>테스트 시작</Button>
             </Contents>
          </Wrapper>
