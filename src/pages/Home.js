@@ -11,7 +11,7 @@ function Home(){
     return (
         <>
          <Wrapper>
-            <Header>재미로 알아보는 국가별 MBTI</Header>
+            <Header>재미로 알아보는 국가별 ㅇㅇㅇMBTI</Header>
             <Contents>
                 <Title>나에게 맞는 국가는?</Title>
                 <LogoImage>
