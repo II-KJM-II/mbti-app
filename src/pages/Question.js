@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import {ProgressBar,Button} from 'react-bootstrap'
 import {createSearchParams, useNavigate} from 'react-router-dom'
-import {QuestionData} from '../assets/data/questiondata'
+import {QuestionData} from '../data/questiondata'
 function Question(){
     const [questionNo,setQuestionNo]=useState(0)
     const [totalScore,setTotalScore]=useState([
