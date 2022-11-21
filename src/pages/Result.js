@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from 'react-bootstrap/Button'
-
-import {useNavigate, useSearchParams} from 'react-router-dom'
 import { ResultData } from '../data/resultdata'
+import KakaoShareButton from '../component/KakaoShareButton'
+import {useNavigate, useSearchParams} from 'react-router-dom'
 // import { ButtonGroup } from 'react-bootstrap'
 function Result(){
     const navigate=useNavigate()
@@ -27,6 +27,7 @@ function Result(){
                <Desc>{result.desc}</Desc>
                <ButtonGroup>
                     <Button onClick={()=>navigate('/')}>테스트 다시하기</Button>
+                    <KakaoShareButton/>
                </ButtonGroup>
            </Contents>
         </Wrapper>
