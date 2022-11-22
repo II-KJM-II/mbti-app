@@ -54,8 +54,12 @@ function Question(){
 export default Question
 
 const Wrapper=styled.div`
-    height:100vh;
+    height:89.8vh;
     width:100%;
+    color:white;
+    @media screen and (max-width:600px){
+        height:85vh;
+    }
 `
 const Title=styled.div`
     font-size:1.8rem;

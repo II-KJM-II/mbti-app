@@ -24,7 +24,7 @@ function Result(){
                </LogoImage>
                <Desc>{result.desc}</Desc>
                <ButtonGroup>
-                    <Button onClick={()=>navigate('/')}>테스트 다시하기</Button>
+                    <Button onClick={()=>navigate('/')} style={{marginRight:'10px'}}>테스트 다시하기</Button>
                     <KakaoShareButton data={result}/>
                </ButtonGroup>
            </Contents>
@@ -36,22 +36,31 @@ function Result(){
 export default Result
 
 const Wrapper=styled.div`
-    height:100vh;
+    height:92.5vh;
     width:100%;
+    color:white;
+    @media screen and (max-width:600px){
+        width:100%;
+        height:87vh;
+    }
 `
 const Header=styled.div`
     font-size:2.2rem;
     display:flex;
     justify-content:center;
     align-items:center;
+    @media screen and (max-width:600px){
+        margin-top:30px;
+        font-size:1.2rem
+    }
     
-    // @media (max-width:600px){
-    //     font-size:1.8rem;
-    // }
 `
 const Title=styled.div`
     font-size:1.8rem;
     margin-top:40px;
+    @media screen and (max-width:600px){
+        font-size:1rem;
+    }
 `
 const LogoImage=styled.div`
     margin-top:10px;
@@ -60,6 +69,12 @@ const LogoImage=styled.div`
 const Desc=styled.div`
     font-size:1.2rem;
     margin-top:20px;
+    @media screen and (max-width:600px){
+        width:90%;
+        text-align:center;
+        font-size:0.8rem;
+        margin-bottom:10px;
+    }
 `
 const Contents=styled.div`
     display:flex;
