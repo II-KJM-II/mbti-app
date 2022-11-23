@@ -4,6 +4,8 @@ import styles from '../mobile/Question.module.css'
 import {ProgressBar,Button} from 'react-bootstrap'
 import {createSearchParams, useNavigate} from 'react-router-dom'
 import {QuestionData} from '../data/questiondata'
+import KakaoAdfit from '../component/KakoAdfit'
+
 function Question(){
     const [questionNo,setQuestionNo]=useState(0)
     const [totalScore,setTotalScore]=useState([
@@ -47,6 +49,7 @@ function Question(){
                 <Button className={styles.btn} onClick={()=>handleClickButton(1,QuestionData[questionNo].type)} >{QuestionData[questionNo].answera}</Button>
                 <Button className={styles.btn} onClick={()=>handleClickButton(0,QuestionData[questionNo].type)} style={{marginLeft:'20px'}}>{QuestionData[questionNo].answerb}</Button>
             </ButtonGroup>
+            <KakaoAdfit/>
         </Wrapper>
     )
 }

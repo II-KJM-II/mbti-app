@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from 'react-bootstrap/Button'
 import { ResultData } from '../data/resultdata'
+import KakaoAdfit from '../component/KakoAdfit'
 import KakaoShareButton from '../component/KakaoShareButton'
 import {useNavigate, useSearchParams} from 'react-router-dom'
 function Result(){
@@ -28,6 +29,7 @@ function Result(){
                     <KakaoShareButton data={result}/>
                </ButtonGroup>
            </Contents>
+           <KakaoAdfit/>
         </Wrapper>
        </>
     )

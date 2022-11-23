@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import img from '../img/지구.jpg'
 import Button from 'react-bootstrap/Button'
 import {useNavigate} from 'react-router-dom'
+import KakaoAdfit from '../component/KakoAdfit'
 
 function Home(){
     const navigate=useNavigate()
@@ -21,6 +22,7 @@ function Home(){
                 <Desc>MBTI를 기반으로 하는 나와 잘맞는 국가 찾기</Desc>
                 <Button onClick={handleClickButton} style={{marginTop:'20px'}}>테스트 시작</Button>
             </Contents>
+            <KakaoAdfit/>
          </Wrapper>
         </>
     )
