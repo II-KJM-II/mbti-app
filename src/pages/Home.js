@@ -20,7 +20,7 @@ function Home(){
                     <img src={img} alt="" width={350} height={350} className='rounded-circle' />
                 </LogoImage>
                 <Desc>MBTI를 기반으로 하는 나와 잘맞는 국가 찾기</Desc>
-                <Button onClick={handleClickButton} style={{marginTop:'20px'}}>테스트 시작</Button>
+                <Button onClick={handleClickButton} style={{marginTop:'20px',marginBottom:'30px'}}>테스트 시작</Button>
             </Contents>
             <KakaoAdfit style={{position:'relative',bottom:'0'}}/>
          </Wrapper>

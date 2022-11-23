@@ -84,4 +84,5 @@ const Contents=styled.div`
 const ButtonGroup=styled.div`
     display:flex;
     flex-direction:row;
+    margin-bottom:30px;
 `
