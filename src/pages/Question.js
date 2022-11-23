@@ -42,7 +42,7 @@ function Question(){
     return (
         <Wrapper>
             <ProgressBar variant="info" now={questionNo/QuestionData.length*100} style={{marginTop:'20px'}}/>
-            <Title>{QuestionData[questionNo].title}</Title>
+            <Title>{QuestionData[questionNo].id}. {QuestionData[questionNo].title}</Title>
             <ButtonGroup>
                 <Button className={styles.btn} onClick={()=>handleClickButton(1,QuestionData[questionNo].type)} >{QuestionData[questionNo].answera}</Button>
                 <Button className={styles.btn} onClick={()=>handleClickButton(0,QuestionData[questionNo].type)} style={{marginLeft:'20px'}}>{QuestionData[questionNo].answerb}</Button>
@@ -54,21 +54,20 @@ function Question(){
 export default Question
 
 const Wrapper=styled.div`
-    height:89.8vh;
-    width:100%;
+    height:100vh;
+    width:100vw;
     color:white;
-    @media screen and (max-width:600px){
-        height:85vh;
-    }
+    overflow:hidden;
 `
 const Title=styled.div`
     font-size:1.8rem;
     text-align:center;
+    margin-top:10px;
 `
 const ButtonGroup=styled.div`
     display:flex;
     flex-direction:row;
     align-items:center;
     justify-content:center;
-    margin-top:10px;
+    margin-top:100px;
 `

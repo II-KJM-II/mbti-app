@@ -30,13 +30,10 @@ export default Home
 
 const Wrapper=styled.div`
     background-color:black;
-    height:92.5vh;
-    width:100%;
+    height:100vh;
+    width:100vw;
     color:white;
-    @media screen and (max-width:600px){
-        width:100%;
-        height:87vh;
-    }
+    overflow:hidden;
 `
 const Header=styled.div`
     font-size:2.2rem;
