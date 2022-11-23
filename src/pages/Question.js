@@ -49,7 +49,7 @@ function Question(){
                 <Button className={styles.btn} onClick={()=>handleClickButton(1,QuestionData[questionNo].type)} >{QuestionData[questionNo].answera}</Button>
                 <Button className={styles.btn} onClick={()=>handleClickButton(0,QuestionData[questionNo].type)} style={{marginLeft:'20px'}}>{QuestionData[questionNo].answerb}</Button>
             </ButtonGroup>
-            <KakaoAdfit/>
+            <KakaoAdfit style={{position:'relative',bottom:'0'}}/>
         </Wrapper>
     )
 }

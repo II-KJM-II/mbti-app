@@ -29,7 +29,7 @@ function Result(){
                     <KakaoShareButton data={result}/>
                </ButtonGroup>
            </Contents>
-           <KakaoAdfit/>
+           <KakaoAdfit style={{position:'relative',bottom:'0'}}/>
         </Wrapper>
        </>
     )

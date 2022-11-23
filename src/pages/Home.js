@@ -20,9 +20,9 @@ function Home(){
                     <img src={img} alt="" width={350} height={350} className='rounded-circle' />
                 </LogoImage>
                 <Desc>MBTI를 기반으로 하는 나와 잘맞는 국가 찾기</Desc>
-                <Button onClick={handleClickButton} style={{marginTop:'10px'}}>테스트 시작</Button>
+                <Button onClick={handleClickButton} style={{marginTop:'20px'}}>테스트 시작</Button>
             </Contents>
-            <KakaoAdfit/>
+            <KakaoAdfit style={{position:'relative',bottom:'0'}}/>
          </Wrapper>
         </>
     )
@@ -35,7 +35,6 @@ const Wrapper=styled.div`
     height:100vh;
     width:100vw;
     color:white;
-    overflow:hidden;
 `
 const Header=styled.div`
     font-size:2.2rem;
@@ -44,23 +43,23 @@ const Header=styled.div`
     align-items:center;
     @media screen and (max-width:600px){
         font-size:1.2rem;
-        margin-top:20px;
+        margin-top:30px;
     }
 `
 const Title=styled.div`
     font-size:1.8rem;
-    margin-top:30px;
+    margin-top:40px;
     @media screen and (max-width:600px){
         font-size:1rem;
     }
 `
 const LogoImage=styled.div`
-    margin-top:5px;
+    margin-top:10px;
 `
 
 const Desc=styled.div`
     font-size:1.2rem;
-    margin-top:10px;
+    margin-top:20px;
     @media screen and (max-width:600px){
         font-size:0.8rem;
     }
