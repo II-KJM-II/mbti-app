@@ -36,7 +36,7 @@ function Result(){
 export default Result
 
 const Wrapper=styled.div`
-    height:90vh;
+    height:92vh;
     width:100vw;
     color:white;
     overflow:hidden;
