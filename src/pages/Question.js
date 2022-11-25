@@ -4,7 +4,6 @@ import styles from '../mobile/Question.module.css'
 import {ProgressBar,Button} from 'react-bootstrap'
 import {createSearchParams, useNavigate} from 'react-router-dom'
 import {QuestionData} from '../data/questiondata'
-import KakaoAdfit from '../component/KakoAdfit'
 
 function Question(){
     const [questionNo,setQuestionNo]=useState(0)
@@ -49,7 +48,6 @@ function Question(){
                 <Button className={styles.btn} onClick={()=>handleClickButton(1,QuestionData[questionNo].type)} >{QuestionData[questionNo].answera}</Button>
                 <Button className={styles.btn} onClick={()=>handleClickButton(0,QuestionData[questionNo].type)} style={{marginLeft:'20px'}}>{QuestionData[questionNo].answerb}</Button>
             </ButtonGroup>
-            <KakaoAdfit style={{position:'relative',bottom:'0'}}/>
         </Wrapper>
     )
 }
@@ -57,7 +55,7 @@ function Question(){
 export default Question
 
 const Wrapper=styled.div`
-    height:100vh;
+    height:90vh;
     width:100vw;
     color:white;
     overflow:hidden;

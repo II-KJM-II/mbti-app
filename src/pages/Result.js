@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from 'react-bootstrap/Button'
 import { ResultData } from '../data/resultdata'
-import KakaoAdfit from '../component/KakoAdfit'
 import KakaoShareButton from '../component/KakaoShareButton'
 import {useNavigate, useSearchParams} from 'react-router-dom'
 function Result(){
@@ -29,7 +28,6 @@ function Result(){
                     <KakaoShareButton data={result}/>
                </ButtonGroup>
            </Contents>
-           <KakaoAdfit style={{position:'relative',bottom:'0'}}/>
         </Wrapper>
        </>
     )
@@ -38,12 +36,13 @@ function Result(){
 export default Result
 
 const Wrapper=styled.div`
-    height:100vh;
+    height:90vh;
     width:100vw;
     color:white;
     overflow:hidden;
 `
 const Header=styled.div`
+    margin-top:20px;
     font-size:2.2rem;
     display:flex;
     justify-content:center;
@@ -68,6 +67,7 @@ const LogoImage=styled.div`
 const Desc=styled.div`
     font-size:1.2rem;
     margin-top:20px;
+    margin-bottom:20px;
     @media screen and (max-width:600px){
         width:90%;
         text-align:center;
